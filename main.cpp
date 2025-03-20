@@ -7,9 +7,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
+//asks whether the user wants to exit. gets called at the end of later functions.
 int ExitFunction() {
 int Exit_Variable = 0;
-
 string Exit_String = "";
 Exit_String = "Exit?\n";
 
@@ -18,6 +18,7 @@ cin >> Exit_Variable;
 return 0;
 }
 
+//Called when the "PlayerCount" variable (declared in the main function) is equal to 1.
 int OnePlayer() {
 string PlayerCountTooSmallLine1 = "";
 string PlayerCountTooSmallLine2 = "";
@@ -28,9 +29,9 @@ cout << PlayerCountTooSmallLine1 << endl;
 cout << PlayerCountTooSmallLine2 << endl;
 return ExitFunction(); }
 
+
+
 int TwoPlayers() {
-
-
 string PlayerOneName = "";
 string PlayerTwoName = "";
 
